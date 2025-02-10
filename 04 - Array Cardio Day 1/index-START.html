@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Array Cardio 💪</title>
   <link rel="icon" href="https://fav.farm/🔥" />
 </head>
+
 <body>
   <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
   <script>
@@ -35,32 +37,118 @@
       'Berne, Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin', 'Ben-Gurion, David', 'Bevel, Ken', 'Biden, Joseph', 'Bennington, Chester', 'Bierce, Ambrose',
       'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
     ];
-    
+
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    // let inventoresFiltrados = inventors.filter(valor=> {
+    //   if (valor.year >= 1500 && valor.year < 1600) {
+    //     return true;
+    //   } else {
+    //     return false;
+    //   }
+    // })
 
-    // Array.prototype.map()
-    // 2. Give us an array of the inventors first and last names
+    // console.log(inventoresFiltrados);
+    // // Array.prototype.map()
+    // // 2. Give us an array of the inventors first and last names
+
+    // let inventoresMapeados = inventors.map(inventor => {
+    //   let nombreCompleto = inventor.first + " " + inventor.last;
+    //   return nombreCompleto;
+    // })
+
+    // console.log(inventoresMapeados);
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
 
+    // let sortearAnos = inventors.sort( (a,b) => {
+    //   if (a.year > b.year){
+    //     return 1;
+    //   } else if (a.year < b.year){
+    //     return -1;
+    //   } else if (a.year === b.year){
+    //     return 0;
+    //   }
+    // })
+
+    // console.table(sortearAnos);
+
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
+    // let sumaAnos = inventors.reduce( (acumulador, objeto) =>{
+    //   return acumulador + (objeto.passed - objeto.year);
+    //   ;
+    // },0)
+
+    // console.log(sumaAnos);
+
     // 5. Sort the inventors by years lived
+
+    // let sortearAnos = inventors.sort( (a,b) => {
+    //   if ((a.passed - a.year) > (b.passed - b.year)){
+    //     return 1;
+    //   } else if ((a.passed - a.year) < (b.passed - b.year)){
+    //     return -1;
+    //   } else if ((a.passed - a.year) === (b.passed - b.year)){
+    //     return 0;
+    //   }
+    // })
+
+    // console.table(sortearAnos);
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+    // let coleccion = document.querySelector('.mw-category');
+    // let coleccion2 = coleccion.querySelectorAll('a');
+    // let arrayEnlaces = Array.from(coleccion2);
+    // let textoEnlaces = arrayEnlaces.map(enlace => {
+    //   return enlace.textContent;
+    // })
+    // let textoConDe = textoEnlaces.filter(elemento => {
+    //   if (elemento.includes(' de ')) {
+    //     return true;
+    //   } else {
+    //     return false;
+    //   }
+    // })
 
-    // 7. sort Exercise
-    // Sort the people alphabetically by last name
+
+    // // 7. sort Exercise
+    // // Sort the people alphabetically by last name
+
+    // let porApellido = inventors.sort( (inventor1, inventor2) =>{
+    //   if (inventor1.last > inventor2.last){
+    //     return 1;
+    //   } else if (inventor1.last < inventor2.last) {
+    //     return -1;
+    //   }
+    // });
+    // console.table(porApellido);
+
+    // let porApellido = people.sort();
+    // console.table(porApellido);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
-    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+
+    // let reduccion = data.reduce((acumulador, elemento) => {
+    //   if (!acumulador.includes(elemento)) {
+    //     acumulador.push(elemento);
+    //   }
+
+    //   return acumulador;
+    // },[])
+
+    // console.log(reduccion);
+
+    
 
   </script>
 </body>
+
 </html>
